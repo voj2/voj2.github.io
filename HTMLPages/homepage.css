@@ -1,0 +1,48 @@
+.content-card {
+    width: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: darkgrey;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    
+    
+    
+
+}
+
+.hello-text{
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+}
+
+.name-text{
+    font-family: 'Staatliches', cursive;
+    
+}
+
+h1{
+    font-family: 'Staatliches', cursive;
+    
+}
+.column{
+    float: right;
+    width: 33.33%;
+    padding:1px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+    
+
+
+
+
+
+
+
+
+
+

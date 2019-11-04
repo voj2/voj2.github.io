@@ -1,0 +1,25 @@
+.wrapper{
+    width: 100%;
+    max-width: 900px;
+    margin: center;
+    background-color: #91b7c7;
+    height: 900px;
+}
+img{
+    width: 100%;
+}
+header{
+    text-align: center;
+    background-color: #91b7c7;
+    height: 100px;
+    line-height: 100px;
+    text-underline-position: 5px;
+}
+   .article1{
+    float: left;
+    overflow: scroll;
+}
+.article2{
+    float:right;
+    overflow: scroll;
+}

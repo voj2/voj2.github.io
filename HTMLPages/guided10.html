@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .div1 {
+            height: 40px;
+            width: 70%;
+            background: black;
+            margin: 50px auto;
+            border-radius: 5px;
+        }
+
+        @keyframes change-colors {
+            0% {
+                background-color: blue;
+                top: 0px;
+            }
+
+            50% {
+                background-color: green;
+                top: 50px;
+            }
+
+            100% {
+                background-color: yellow;
+                top: 0px;
+            }
+        }
+
+        .div1 {
+            height 40px;
+            width 70%;
+            background: black;
+            margin: 50px auto;
+            border-radius: 5px;
+
+            animation-name: change-colors;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            position: relative;
+            border-radius: 50%;
+            background: linear-gradient(35deg,
+                    #ccffff,
+                    #ffcccc);
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                top: 0px;
+            }
+
+            50% {
+                top: 250px;
+                width: 130px;
+                height: 70px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+
+    </div>
+    <div class="ball">
+
+    </div>
+</body>
+
+</html>
