@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            max-width: 900px;
+            width: 100%;
+            margin: auto;
+            font-family: 'bebas Neue', cursive;
+            letter-spacing: 3px;
+            background-color: #525252;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 350px;
+            background: linear-gradient(90deg, rgba(250, 163, 229, 1) 11%, rgba(69, 232, 252, 1) 100%);
+            border-radius: 20px;
+            display: grid;
+            grid-gap: 0;
+            overflow: hidden;
+            grid-template-columns: 1fr;
+            grid-row-gap: 5px;
+        }
+
+        .item {
+            background-color: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .one {
+            grid-template-rows: 50px 50px 50px 50px 50px;
+        }
+
+        .two {
+            grid-template-rows: 20px 50px 100px 200px 75px;
+        }
+
+        .three {
+            grid-template-rows: 15% 15% 15% 15% 15%;
+        }
+        .four{
+            grid-template-rows: 10% 30% 40% 5% 15%;
+        }
+        .five{
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+        .seven{
+            grid-template-rows: 1fr 30% 50px 50px auto;
+        }
+        .eight{
+            grid-auto-rows: repeat(5, 15%);
+        }
+        .nine{
+            grid-template-rows:  repeat(2, 35%) repeat(3, 1fr);
+        }
+        .ten{
+            grid-template-rows: repeat(2, 100px 1fr) 2fr;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1.Fixed Height-50px</h1>
+    <section class="container one">
+        <div class="item">50px</div>
+        <div class="item">50px</div>
+        <div class="item">50px</div>
+        <div class="item">50px</div>
+        <div class="item">50px</div>
+
+
+    </section>
+    <h1>2.Fixed Height-different sizes</h1>
+    <section class="container two">
+        <div class="item">20px</div>
+        <div class="item">50px</div>
+        <div class="item">100px</div>
+        <div class="item">200px</div>
+        <div class="item">75px</div>
+
+
+    </section>
+    <h1>3.Fixible Height-percentages</h1>
+    <section class="container three">
+        <div class="item">15%</div>
+        <div class="item">15%</div>
+        <div class="item">15%</div>
+        <div class="item">15%</div>
+        <div class="item">15%</div>
+
+
+    </section>
+     <h1>4.Fixed Height-different percentages</h1>
+    <section class="container four">
+        <div class="item">10%</div>
+        <div class="item">30%</div>
+        <div class="item">40%</div>
+        <div class="item">5%</div>
+        <div class="item">15%</div>
+
+
+    </section>
+     <h1>5.Fixed Height-fr-</h1>
+    <section class="container five">
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+
+
+    </section>
+     <h1>5.Fixed Height-fr-</h1>
+    <section class="container five">
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+
+
+    </section>
+    <h1>6.Fixed Height-fr-</h1>
+    <section class="container five">
+        <div class="item">1fr</div>
+        <div class="item">3fr</div>
+        <div class="item">2fr</div>
+        <div class="item">1fr</div>
+        <div class="item">3fr</div>
+
+
+    </section>
+    <h1>7.combined-fixed with flexible height</h1>
+    <section class="container seven">
+        <div class="item">1fr</div>
+        <div class="item">30%</div>
+        <div class="item">50px</div>
+        <div class="item">50px</div>
+        <div class="item">auto</div>
+
+
+    </section>
+    <h1>8. repeat</h1>
+    <section class="container eight">
+        <div class="item">15%</div>
+        <div class="item">15%</div>
+        <div class="item">15%</div>
+        <div class="item">15%</div>
+        <div class="item">15%</div>
+
+
+    </section>
+    <h1>9. repeeat</h1>
+    <section class="container nine">
+        <div class="item">35%</div>
+        <div class="item">35%</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+
+
+    </section>
+    <h1>10. repeat</h1>
+    <section class="container ten">
+        <div class="item">100px</div>
+        <div class="item">1fr</div>
+        <div class="item">100px</div>
+        <div class="item">1fr</div>
+        <div class="item">2fr</div>
+
+
+    </section>
+
+
+</body></html>

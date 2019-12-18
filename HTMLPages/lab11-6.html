@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #section1 {
+            flex-direction: column;
+        }
+
+        .grass {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: #defde0;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+
+
+
+        }
+
+        .fire {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: #fddfdf;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .electric {
+            background-color: #fcf7de;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .water {
+            background-color: #def3fd;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .ground {
+            background-color: #f4e7da;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .poison {
+            background-color: #b19cd9;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .bug {
+            background-color: #f8d5a3;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .dragon {
+            background-color: #97b3e6;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .psychic {
+            background-color: #eaeda1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .flying {
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .fighting {
+            background-color: #e6e0d4;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .normal {
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .ice {
+            background-color: #66ccff;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 212px;
+            width: 120px;
+            flex-direction: column;
+        }
+
+        .img-container {
+            background-color: 255;
+            width: 120px;
+            height: 120px;
+
+
+
+
+        }
+
+        #img-container{
+            flex-direction: column;
+        }
+        #searchInput{
+            width: 100%;
+            padding: 10px 5px 10px 5px;
+            border: none;
+            background-color: rgba(0,0,0,0.2);
+            color: white;
+            font-family: roboto;
+            font-size: 15px;
+        }
+        ::placeholder{
+            color: white;
+        }
+        body > div{
+            max-width: 300px;
+            margin: auto;
+        }
+        #section{
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+    <script>
+    function filterResults(){
+        let inputElement = document.getElementByID("searchInput")
+        let searchValue =inputElement.value.toUpperCase();
+        
+        let pokemon = document.getElementsByClassName("pokemon-card");
+    
+        for(i =0; i < pokemon.length;i++){
+            let poketext = pokemon[i].textContent;
+            if(poketext.toUpperCase().indexOf(searchValue) > -1){
+                pokemon{i}.style.display="";
+            }
+            else{
+                pokemon[i]. style.display="none";
+            }
+            
+        }
+    }
+    </script>
+    
+</head>
+
+<body>
+    <h1>
+        Pokemon Search
+    </h1>
+
+    <div>
+        <input type="text" id="searchInput" onkeyup="filterResults()" placeholder="Search for pokemon name or type">
+
+    </div>
+
+    <section>
+        
+        <div class="pokemon-card grass">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/1-bulbasaur-grass.png">
+
+
+
+            </div>
+            #001
+            <strong>Bulbasuar</strong>
+
+        </div>
+
+
+    </section>
+    <section>
+        <div class="pokemon-card fire">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/59-arcanine-fire.png">
+            </div>
+            <strong>arcanine</strong>
+
+        </div>
+
+    </section>
+    <section>
+        <div class="pokemon-card electric">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/125-electabuzz-electric.png">
+            </div>
+            <strong>Electabuzz</strong>
+
+
+        </div>
+
+    </section>
+    <section>
+        <div class="pokemon-card water">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/134-vaporeon-water.png">
+
+
+
+
+
+            </div>
+            <strong>vaporeon</strong>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="pokemon-card ground">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/112-rhydon-ground.png">
+
+
+
+
+            </div>
+            <strong>rhydon</strong>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="pokemon-card poison">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/24-arbok-poison.png">
+
+
+
+
+            </div>
+            <strong>Arbok</strong>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="pokemon-card bug">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/123-scyther-bug.png">
+
+
+
+
+            </div>
+            <strong>scyther</strong>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="pokemon-card dragon">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/149-dragonite-dragon.png">
+
+
+
+
+            </div>
+            <strong>Dragonite</strong>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="pokemon-card psychic">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/150-mewtwo-psychic.png">
+
+
+
+
+            </div>
+            <strong>Mewtwo</strong>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="pokemon-card flying">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/18-pidgeot-flying.png">
+
+
+
+
+            </div>
+            <strong>pidgeot</strong>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="pokemon-card fighting">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/67-machoke-fighting.png">
+
+
+
+
+            </div>
+             <strong>machoke</strong>           
+        </div>
+
+
+    </section>
+    <section>
+        <div class="pokemon-card normal">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px;" src="../image/143-snorlax-normal.png">
+
+
+
+
+            </div>
+            <strong>snorlax</strong>
+        </div>
+
+
+    </section>
+    <section>
+        <div class="pokemon-card ice">
+            <div class="img-container">
+                <img style="width: 120px; height: 120px ;" src="../image/144-articuno-ice.png">
+                
+                
+
+
+
+
+            </div>
+            <strong>articuno</strong>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>

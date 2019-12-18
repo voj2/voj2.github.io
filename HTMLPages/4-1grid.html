@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            max-width: 900px;
+            width: 100%;
+            margin: auto;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 3px;
+            background-color: #525252;
+        }
+
+        .container {
+            width: 100%;
+            background: linear-gradient(90deg, rgba(250, 163, 229, 1) 11%, rgba(69, 232, 1)100%);
+            border-radius: 20px;
+            display: grid;
+            grid-gap: 0;
+            padding: 20px 0 20px 0;
+            overflow: hidden;
+        }
+
+        .item {
+            background-color: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .one {
+            grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        }
+
+        .two {
+            grid-template-columns: 100px 200px 300px 30px;
+        }
+
+        .three {
+             grid-template-columns: 10% 10% 10% 10% 10% 10%;
+        }
+        .four{
+            grid-template-columns: 5% 10% 20% 50% 10% 1%;
+        }
+        .five{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            
+        }
+        .seven{
+            grid-template-columns: 20% 250px 1fr 1fr 2fr 1fr;
+        }
+        .eight{
+            grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr; 
+        }
+        .nine{
+            grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+        }
+        .ten{
+            grid-template-columns: repeat(3, 10%) repeat(3, 1fr);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>1. Fixed Width - 100px;</h1>
+    <section class="container one">
+        <div class="item">100px</div>
+        <div class="item">100px</div>
+        <div class="item">100px</div>
+        <div class="item">100px</div>
+        <div class="item">100px</div>
+        <div class="item">100px</div>
+
+    </section>
+    <h1>2. Fixed Width - different sizes;</h1>
+    <section class="container two">
+        <div class="item">1050px</div>
+        <div class="item">200px</div>
+        <div class="item">300px</div>
+        <div class="item">30px</div>
+
+    </section>
+    <h1>3. Fixed Width - percentages;</h1>
+    <section class="container three">
+        <div class="item">10%</div>
+        <div class="item">10%</div>
+        <div class="item">10%</div>
+        <div class="item">10%</div>
+        <div class="item">10%</div>
+        <div class="item">10%</div>
+
+    </section>
+    <h1>4. Fixed Width - different percentages;</h1>
+    <section class="container four">
+        <div class="item">5%</div>
+        <div class="item">10%</div>
+        <div class="item">20%</div>
+        <div class="item">50%</div>
+        <div class="item">10%</div>
+        <div class="item">1%</div>
+
+    </section>
+    <h1>5. Fixed Width - fr;</h1>
+    <section class="container five">
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+
+    </section>
+    <h1>6. Fixed Width - fr;</h1>
+    <section class="container five">
+        <div class="item">1fr</div>
+        <div class="item">2fr</div>
+        <div class="item">6fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+
+    </section>
+    <h1>7. combined-fixed with flexivle columns;</h1>
+    <section class="container seven">
+        <div class="item">20%</div>
+        <div class="item">250px</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">2fr</div>
+        <div class="item">1fr</div>
+
+    </section>
+     <h1>8. repeat(6,10%);</h1>
+    <section class="container eight">
+        <div class="item">1fr</div>
+        <div class="item">2fr</div>
+        <div class="item">1fr</div>
+        <div class="item">2fr</div>
+        <div class="item">1fr</div>
+        <div class="item">2fr</div>
+
+    </section>
+    
+    <h1>9. alternating width using repeat ;</h1>
+    <section class="container nine">
+        <div class="item">1fr</div>
+        <div class="item">2fr</div>
+        <div class="item">1fr</div>
+        <div class="item">2fr</div>
+        <div class="item">1fr</div>
+        <div class="item">2fr</div>
+
+    </section>
+      <h1>10. using multiple repeats ;</h1>
+    <section class="container ten">
+        <div class="item">10%</div>
+        <div class="item">10%</div>
+        <div class="item">10%</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+        <div class="item">1fr</div>
+
+    </section>
+     
+    
+
+
+</body>
+
+</html>
